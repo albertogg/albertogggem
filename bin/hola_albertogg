@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require 'hola_albertogg'
+puts Hola::Say.hi(ARGV[0])

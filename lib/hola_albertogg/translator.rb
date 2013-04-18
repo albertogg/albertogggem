@@ -6,11 +6,11 @@ module Hola
 
     def hi
       case @language
-      when :spanish
+      when "spanish"
         "hola mundo"
-      when :italian
+      when "italian"
         "ciao mondo"
-      when :french
+      when "french"
         "bonjour tout le monde"
       else
         "hello world"
