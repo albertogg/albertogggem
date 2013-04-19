@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'hola_albertogg'
-  s.version     = '0.0.2'
+  s.version     = '0.1.0'
   s.executables << 'hola_albertogg'
   s.license     = 'MIT'
   s.date        = '2013-04-17'
@@ -12,6 +12,7 @@ Gem::Specification.new do |s|
     bin/hola_albertogg
     lib/hola_albertogg.rb
     lib/hola_albertogg/translator.rb
+    lib/hola_albertogg/command_line.rb
   ]
   s.homepage    = 'https://github.com/albertogg/albertogggem'
 end
