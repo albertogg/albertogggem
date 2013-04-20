@@ -7,13 +7,13 @@ module Hola
     def hi
       case @language
       when "spanish"
-        "hola mundo"
+        puts "hola mundo"
       when "italian"
-        "ciao mondo"
+        puts "ciao mondo"
       when "french"
-        "bonjour tout le monde"
+        puts "bonjour tout le monde"
       else
-        "hello world"
+        puts "hello world"
       end
     end
   end

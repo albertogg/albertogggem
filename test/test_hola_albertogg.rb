@@ -1,13 +1,13 @@
 require 'minitest/autorun'
 require 'hola_albertogg'
 
-class SayTest < MiniTest::Unit::TestCase
+class HelloTest < MiniTest::Unit::TestCase
   def test_english_hi
-    assert_equal "hello world", Hola::Say.hi
+    assert_equal "hello world", Hola::Translator.new("english").hi
   end
 
   def test_spanish_hi
-    assert_equal "hola mundo", Hola::Say.hi("spanish")
+    assert_equal "hola mundo", Hola::Translator.new("spanish").hi
   end
 
   def test_not_equal

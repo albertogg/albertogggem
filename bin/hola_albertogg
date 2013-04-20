@@ -1,5 +1,26 @@
 #!/usr/bin/env ruby
 
+require 'optparse'
 require 'hola_albertogg'
 
-puts Hola::Say.hi
+options = {
+  :Translation => 'english'
+}
+
+option_parser = OptionParser.new("", 24, '  ') do |opts|
+  opts.on('-t', '--translate [TRANSLATION]', 'Write down the language') do |translations|
+    options[:Translation] = translations
+  end
+  opts.on('-v', '--version', 'show version') do
+    puts "hola_albertogg version #{Hola::VERSION}"
+    exit
+  end
+  opts.on('-h', '--help', 'display help') do
+    puts opts
+    exit
+  end
+
+  opts.parse! ARGV
+end
+
+Hola::Translator.new("#{options[:Translation]}").hi

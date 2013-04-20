@@ -12,7 +12,9 @@ Gem::Specification.new do |s|
     bin/hola_albertogg
     lib/hola_albertogg.rb
     lib/hola_albertogg/translator.rb
-    lib/hola_albertogg/command_line.rb
+    lib/hola_albertogg/const.rb
+    hola_albertogg.gemspec
   ]
   s.homepage    = 'https://github.com/albertogg/albertogggem'
+  s.require_paths = %w[lib]
 end
