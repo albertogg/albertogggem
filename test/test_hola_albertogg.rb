@@ -11,6 +11,6 @@ class HelloTest < MiniTest::Unit::TestCase
   end
 
   def test_not_equal
-    refute_equal "ciao mondo", Hola::Say.hi
+    refute_equal "ciao mondo", Hola::Translator.new("french").hi
   end
 end
