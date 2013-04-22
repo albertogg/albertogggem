@@ -13,4 +13,8 @@ class HelloTest < MiniTest::Unit::TestCase
   def test_not_equal
     refute_equal "ciao mondo", Hola::Translator.new("french").hi
   end
+
+  def test_cli
+    assert `bin/hola_albertogg -h`
+  end
 end

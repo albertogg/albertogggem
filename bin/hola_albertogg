@@ -12,7 +12,7 @@ option_parser = OptionParser.new("", 24, '  ') do |opts|
     options[:Translation] = translations
   end
   opts.on('-v', '--version', 'show version') do
-    puts "hola_albertogg version #{HOLAVERSION}"
+    puts "hola_albertogg version #{Hola::VERSION}"
     exit
   end
   opts.on('-h', '--help', 'display help') do
@@ -20,7 +20,8 @@ option_parser = OptionParser.new("", 24, '  ') do |opts|
     exit
   end
 
-  opts.parse! ARGV
+  opts.parse!(ARGV)
+  options
 end
 
 puts Hola::Translator.new("#{options[:Translation]}").hi

@@ -1,4 +1,2 @@
 require 'hola_albertogg/translator'
-require 'hola_albertogg/const'
-
-HOLAVERSION = Hola::VERSION
+require 'hola_albertogg/version'
